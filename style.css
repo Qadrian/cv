@@ -1,0 +1,321 @@
+/*Navbar*/
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand .nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0);
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+#navb {
+    background-color: transparent;
+    transition: all 1s ease;
+ }
+
+ #navb.navbar-shrink {
+   background-color: black;
+ }
+
+@media (min-width:991px){
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #25a0bd;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar{
+        margin-bottom: 70px;
+        background-color: black !important;
+    }
+    .cap{
+         text-align: center;
+         margin-bottom: 10px;
+         margin-left: 10px;
+    }
+
+    .tipw{
+         margin-right: 20px;
+         margin-top: 50px;
+         
+    }
+    .tips{
+        margin-left: 20px;
+    }
+    
+}
+
+
+
+/*Jumbotron*/
+ .jumbotron {
+    background-image: url(assets/img/bg-image/bg-jumbotron.png);
+    color: white;
+    background-size: cover;
+    height: 670px;
+    margin-top: -75px;
+    }
+    
+.jumbotron .display-4{
+    color: white !important;
+    text-align: center;
+    margin-top: 210px;
+    font-weight: 500;
+    }
+
+.jumbotron .lead{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.profil{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.edge{
+    margin-left: 120px;
+}
+section{
+    min-height:430px;
+}
+
+/*Skill Section*/
+.tools_expert {
+    box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+    padding: 50px 35px; }
+    .tools_expert h3 {
+      color: #222222;
+      font-size: 21px;
+      text-transform: uppercase; }
+    .tools_expert .skill_main .skill_item {
+      margin-bottom: 18px; }
+      .tools_expert .skill_main .skill_item:last-child {
+        margin-bottom: 0px; }
+      .tools_expert .skill_main .skill_item h4 {
+        text-align: right;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        color: #777777;
+        margin-bottom: 15px; }
+      .tools_expert .skill_main .skill_item .progress {
+        height: 20px;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid #eeeeee;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2); }
+        .tools_expert .skill_main .skill_item .progress .progress-bar {
+          width: 0%;
+          transition: width .6s ease;
+          height: 10px;
+          border-radius: 5px;
+          vertical-align: middle;
+          align-self: center;
+          background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+          background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+          background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
+
+/*Bootstrap Timeline By Bootstrapsious.com*/
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Portofolio Modal Section*/
+.modal {
+    color: #000;
+}
+
+.porto{
+    background: #000;
+  }
+.porto img {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+  
+.porto img:hover {
+    opacity: 0.6;
+  }
+/*Portofolio Section End*/
+
+
+/*Testimonials Section*/
+h3{
+	color: #333;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h3::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #25a0bd;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #333;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 5px;
+	margin: 1px 3px;
+	border-radius: 80%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+}
+/*Testimonials Ends*/
+
+.education {
+    background-image: url(assets/img/bg-image/bg-education.png);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: #999;
+}
+
+/*Footer Section*/
+.footer{
+    background-color: black;
+    color: white;
+}
+/*Footer Section Ends*/
